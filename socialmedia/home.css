@@ -324,19 +324,6 @@
   content: "Swipe left/right to navigate";
 }
 
-.on-slide-0 .slide-state, .on-slide-1 .slide-state, .on-slide-2 .slide-state {
-  position: absolute;
-  left: -999em;
-  top: -999em;
-}
-
-.on-slide-0 .deck-state, .on-slide-1 .deck-state, .on-slide-2 .deck-state, .on-slide-3 .deck-state {
-  position: absolute;
-  left: -999em;
-  top: -999em;
-}
-
-
 .csstransforms.csstransitions #intro.deck-previous, .csstransforms.csstransitions #intro.deck-before {
   left: 0;
   top: 0;
