@@ -546,3 +546,11 @@
   min-height: 0;
   height: auto;
 }
+
+table {
+    padding-top: 20px;
+}
+
+th {
+    text-align: center;
+}
