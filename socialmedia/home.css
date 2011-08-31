@@ -16,7 +16,7 @@
   padding-top: 24px;
 }
 
-.csstransforms .home > article > div {
+.csstransforms .home > article div {
   padding-top: 0;
   position: absolute;
   top: 50%;
