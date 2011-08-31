@@ -39,9 +39,9 @@
 }
 
 .home > article h2 {
-  font-size: 24px;
+  font-size: 30px;
   letter-spacing: 2px;
-  color: #999;
+  color: #000;
   font-weight: 100;
   text-shadow: 1px 1px 1px #fff;
 }
