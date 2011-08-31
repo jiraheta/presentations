@@ -298,31 +298,6 @@
   position: relative;
   z-index: 3;
 }
-.on-slide-0 #sample > pre > code, .on-slide-1 #sample > pre > code {
-  color: #fff;
-}
-
-.on-slide-1 #sample pre {
-  position: relative;
-}
-.on-slide-1 #sample pre:after {
-  content: "Use arrow keys to navigate";
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
-  color: #aaa;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-  font-weight: normal;
-  font-size: 24px;
-  height: 32px;
-  position: absolute;
-  top: 50%;
-  margin-top: -16px;
-  left: 0;
-  right: 0;
-  text-align: center;
-}
-.touch .on-slide-1 #sample pre:after {
-  content: "Swipe left/right to navigate";
-}
 
 .csstransforms.csstransitions #intro.deck-previous, .csstransforms.csstransitions #intro.deck-before {
   left: 0;
@@ -395,45 +370,6 @@
 .csstransforms.csstransitions #sample .deck-current, .csstransforms.csstransitions #sample .deck-before, .csstransforms.csstransitions #sample .deck-previous {
   opacity: 1;
 }
-.csstransforms.csstransitions .on-slide-4 .example-current, .csstransforms.csstransitions .on-slide-4 .example-next, .csstransforms.csstransitions .on-slide-5 .example-current, .csstransforms.csstransitions .on-slide-5 .example-next, .csstransforms.csstransitions .on-slide-6 .example-current, .csstransforms.csstransitions .on-slide-6 .example-next, .csstransforms.csstransitions .on-slide-7 .example-current, .csstransforms.csstransitions .on-slide-7 .example-next {
-  -webkit-transition: color 600ms ease-in-out 0ms;
-  -moz-transition: color 600ms ease-in-out 0ms;
-  -ms-transition: color 600ms ease-in-out 0ms;
-  -o-transition: color 600ms ease-in-out 0ms;
-  transition: color 600ms ease-in-out 0ms;
-}
-.csstransforms.csstransitions .deck-status, .csstransforms.csstransitions .goto-form, .csstransforms.csstransitions .deck-next-link, .csstransforms.csstransitions .deck-prev-link {
-  display: block;
-  -webkit-transform: scale(0);
-  -moz-transform: scale(0);
-  -ms-transform: scale(0);
-  -o-transform: scale(0);
-  transform: scale(0);
-  -webkit-transition: -webkit-transform 100ms ease-in-out;
-  -moz-transition: -moz-transform 100ms ease-in-out;
-  -ms-transition: -ms-transform 100ms ease-in-out;
-  -o-transition: -o-transform 100ms ease-in-out;
-  transition: transform 100ms ease-in-out;
-}
-.csstransforms.csstransitions .on-slide-7 .deck-status, .csstransforms.csstransitions .on-slide-8 .deck-status {
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  -o-transform: scale(1);
-  transform: scale(1);
-}
-.csstransforms.csstransitions .on-slide-8 .goto-form, .csstransforms.csstransitions .on-slide-8 .deck-next-link, .csstransforms.csstransitions .on-slide-8 .deck-prev-link {
-  -webkit-transform: scale(1);
-  -moz-transform: scale(1);
-  -ms-transform: scale(1);
-  -o-transform: scale(1);
-  transform: scale(1);
-}
-.csstransforms.csstransitions #now-what.deck-next, .csstransforms.csstransitions #now-what.deck-after {
-  left: 0;
-  top: 0;
-  right: 0;
-}
 .csstransforms.csstransitions #now-what.deck-next .personas, .csstransforms.csstransitions #now-what.deck-after .personas {
   -webkit-transform: translate3d(-300%, 0, 0);
   -moz-transform: translate(-300%, 0);
@@ -479,13 +415,6 @@
 }
 .csstransforms.csstransitions #now-what > p.deck-current {
   opacity: 1;
-}
-.csstransforms.csstransitions .on-slide-10 #now-what .personas, .csstransforms.csstransitions .on-slide-10 #now-what h2 {
-  -webkit-transition-delay: 200ms;
-  -moz-transition-delay: 200ms;
-  -ms-transition-delay: 200ms;
-  -o-transition-delay: 200ms;
-  transition-delay: 200ms;
 }
 
 .pointerevents.csstransforms.csstransitions .deck-current {
