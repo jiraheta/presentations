@@ -324,18 +324,10 @@
   content: "Swipe left/right to navigate";
 }
 
-.on-slide-2 #sample > pre > code {
-  color: #333;
-}
-
 .on-slide-0 .slide-state, .on-slide-1 .slide-state, .on-slide-2 .slide-state {
   position: absolute;
   left: -999em;
   top: -999em;
-}
-
-.on-slide-3 .slide-state {
-  color: #c00;
 }
 
 .on-slide-0 .deck-state, .on-slide-1 .deck-state, .on-slide-2 .deck-state, .on-slide-3 .deck-state {
@@ -344,25 +336,6 @@
   top: -999em;
 }
 
-.on-slide-4 .deck-state {
-  color: #c00;
-}
-
-.on-slide-5 .example-current {
-  color: #c00;
-}
-
-.on-slide-6 .example-next {
-  color: #c00;
-}
-
-.on-slide-7 .deck-status, .on-slide-8 .deck-status {
-  display: block;
-}
-
-.on-slide-8 .goto-form, .on-slide-8 .deck-next-link, .on-slide-8 .deck-prev-link {
-  display: block;
-}
 
 .csstransforms.csstransitions #intro.deck-previous, .csstransforms.csstransitions #intro.deck-before {
   left: 0;
