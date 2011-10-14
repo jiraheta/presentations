@@ -111,4 +111,5 @@ a, a:hover, a:visited {
 
 div.tweet {
     margin: 0px !important;
+    max-width: 100% !important;
 }
