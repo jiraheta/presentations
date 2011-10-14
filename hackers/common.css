@@ -85,11 +85,9 @@ body {
 .slide {
     text-align: center;
     padding-top: 0;
-    position: absolute;
-    margin: 0px 30px;
-    top: 40%;
+    margin: 0px 8em;
+    top: 30%;
     min-height: 0;
-    width: 100%;
 }
 
 h1 {
