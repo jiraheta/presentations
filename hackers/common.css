@@ -75,6 +75,8 @@ body, html {
 body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
   color: #444;
+  padding-left: 30px;
+  padding-right: 30px;
   line-height: 1.25;
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAAAMFBMVEUHBwcICAgJCQkKCgoLCwsNDQ0PDw8ODg4QEBASEhIMDAwTExMGBgYUFBQREREXFxfGAVEBAAAAoklEQVR42u3TSQrEMAxE0dJg2c7g3P+2cYcOooMQ9D6109t+BBCLFrtWVJjAHJpMqvZdnSzMkeEmZ6LIUOyxQhQZtP1aU6LIQPYYiUQGlt5cWhdelsigpGu/ra/zrDUyFOXN9j7MxthtYy1mkeGjYBvHMYxxmUWGvIcb8h5uyHu4Ie/hhryHG/Iebsh7uCHv4Ya8hxvyHm7vz7w/8/7Mfz9zAlrrIunf8MY9AAAAAElFTkSuQmCC) repeat fixed black;
 }
@@ -84,7 +86,7 @@ body {
 
 .slide {
     text-align: center;
-    padding: 0px 30px;
+    padding-top: 0;
     position: absolute;
     top: 40%;
     min-height: 0;
