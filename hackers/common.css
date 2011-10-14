@@ -82,7 +82,7 @@ body {
   -webkit-text-size-adjust: none;
 }
 
-.slide {
+div.slide {
     text-align: center;
     padding-top: 0;
     margin: 0px 8em;
