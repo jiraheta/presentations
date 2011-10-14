@@ -108,3 +108,7 @@ h2 {
 a, a:hover, a:visited {
     color: inherit;
 }
+
+div.tweet {
+    margin: 0px !important;
+}
