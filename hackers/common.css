@@ -94,3 +94,14 @@ body {
 .touch body {
   -webkit-text-size-adjust: none;
 }
+
+.slide {
+    text-align: center;
+}
+
+h1 {
+    font-size: 84px;
+    font-family: "UltraRegular", Georgia, sans-serif;
+    color: #000;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
