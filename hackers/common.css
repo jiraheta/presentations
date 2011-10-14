@@ -84,6 +84,9 @@ body {
 
 .slide {
     text-align: center;
+    padding-top: 0;
+    position: absolute;
+    top: 50%;
 }
 
 h1 {
