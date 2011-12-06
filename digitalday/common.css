@@ -1,0 +1,115 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body, html {
+  height: 100%;
+}
+
+::-moz-selection {
+  background: #599;
+  color: #fff;
+  text-shadow: none;
+}
+
+::selection {
+  background: #599;
+  color: #fff;
+  text-shadow: none;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  color: #444;
+  line-height: 1.25;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAAAMFBMVEUHBwcICAgJCQkKCgoLCwsNDQ0PDw8ODg4QEBASEhIMDAwTExMGBgYUFBQREREXFxfGAVEBAAAAoklEQVR42u3TSQrEMAxE0dJg2c7g3P+2cYcOooMQ9D6109t+BBCLFrtWVJjAHJpMqvZdnSzMkeEmZ6LIUOyxQhQZtP1aU6LIQPYYiUQGlt5cWhdelsigpGu/ra/zrDUyFOXN9j7MxthtYy1mkeGjYBvHMYxxmUWGvIcb8h5uyHu4Ie/hhryHG/Iebsh7uCHv4Ya8hxvyHm7vz7w/8/7Mfz9zAlrrIunf8MY9AAAAAElFTkSuQmCC) repeat fixed black;
+}
+.touch body {
+  -webkit-text-size-adjust: none;
+}
+
+div.slide {
+    text-align: center;
+    padding-top: 0;
+    margin: 0px 8em;
+    top: 30%;
+    min-height: 0;
+}
+
+h1 {
+    font-size: 84px;
+    font-family: "Crimson Text", Georgia, serif;
+    font-weight: 700;
+    color: white;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    font-family: "Crimson Text", Georgia, serif;
+    font-weight: 400;
+    font-size: 42px;
+    color: #9DCB3B;
+}
+
+a, a:hover, a:visited {
+    color: inherit;
+}
+
+div.tweet {
+    margin: 0px !important;
+    max-width: 100% !important;
+}
