@@ -27,6 +27,7 @@
 
   <!-- fonts -->
   <link rel="stylesheet" href="http://www.iron.io/assets/fonts/stylesheet.css" type="text/css" charset="utf-8" />
+  <link rel="stylesheet" href="bootstrap.css" type="text/css" charset="utf-8" />
   <style type="text/css">
     .main-container h2, .content-container h2, .btn-box .title, .information-area .column-list h3, .sign-form h3, .login-area h2, .column-holder h3, .threecolumns h3,
     h3.title {
@@ -51,6 +52,27 @@
     .doc-section {
             padding-top: 60px;
     }
+    .subsubnavigation {
+            background-color: #000;
+            vertical-align: middle;
+            text-shadow: 0px 0px 0px;
+            width: 100%;
+            z-index: 9;
+            position: relative;
+    }
+    .subsubnavigation li {
+            text-align: middle;
+    }
+    .subsubnavigation a {
+            color: #FFF;
+            text-shadow: 0px 0px 0px;
+    }
+    .collapse {
+            display: none;
+    }
+    .collapse.in {
+            display: block;
+    }
   </style>
   <script src="https://www.google.com/jsapi?key=ABQIAAAAhes0f80sBcwL-h5xCNkkgxTs5Gr0DWOUG974XQ8PuEqOljLYwRTQYGFgQvKvZgAbxrinP5i8V-N8hw" type="text/javascript"></script>
 
@@ -59,9 +81,9 @@
   </script>
   <script src="http://www.iron.io/assets/html5shiv-b6c03b97409d5372b161ed2d47d3f2e7.js" type="text/javascript"></script>
   <script type="text/javascript" src="bootstrap-scrollspy.js"></script>
+  <script type="text/javascript" src="bootstrap.js"></script>
 </head>
-<body class="team" data-spy="scroll" data-target=".subnavigation" data-offset="-100">
-
+<body class="team">
 <div id="wrapper">
   <div class="wrapper-holder">
 
@@ -70,8 +92,9 @@
   <nav id="nav">
     <ul>
       <li class=""><a href="/products">Products</a></li>
+      <li class="active"><a href="http://dev.iron.io">Dev Center</a></li>
       <li class=""><a href="/customers">Customers</a></li>
-      <li class="active"><a href="/about">About Us</a></li>
+      <li class=""><a href="/about">About Us</a></li>
       <li class=""><a href="http://support.iron.io" target="_blank">Service &amp; Support</a></li>
       <li class=""><a href="http://hud.iron.io">Login</a></li>
     </ul>
@@ -93,19 +116,38 @@
 </header>
 
 <div id="scroll-anchor"></div>
+<div class="subnav">
 <div class="subnavigation" style="width: 948px;">
   <ul class="menu page-menu nav">
-    <li class=""><a href="#codes">Codes</a></li>
-    <li class=""><a href="#schedules">Schedules</a></li>
-    <li class=""><a href="#tasks">Tasks</a></li>
-    <li class=""><a href="#writing-code-for-iron-worker">Writing Code For IronWorker</a></li>
+    <li class=""><a href="/get-coding">Get Coding</a></li>
+    <li class="active"><a href="/docs">Docs</a></li>
+    <li class=""><a href="/libraries">Libraries</a></li>
+    <li class="dropdown" style="float: right;" id="product-dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#product-dropdown">
+                    IronWorker
+                    <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                    <li><a href="/ironworker">IronWorker</a></li>
+                    <li><a href="/ironmq">IronMQ</a></li>
+            </ul>
+    </li>
   </ul>
+</div>
+<div class="subsubnavigation">
+  <ul class="menu page-menu nav" style="padding: 0px;">
+    <li class="active"><a href="/reference">Reference</a></li>
+    <li><a href="/get-started">Get Started</a></li>
+    <li><a href="/articles">Articles</a></li>
+    <li><a href="/troubleshooting">Troubleshooting</a></li>
+  </ul>
+</div>
 </div>
 
   <div class="content-container about-page">
 
 
-          <div class="main-info">
+          <div class="main-info" style="width: 75%; float: right;">
       <hgroup class="doc-section" id="codes">
       <h2>
               <span class="holder-row">Codes</span><span class="holder-row">Uploading and Managing Your Workers</span>
@@ -146,6 +188,64 @@
       <p>Team Iron is at its core a group of technologists, cloud architects, and system developers. The majority are long-time programmers &#8212; expert in building apps on the cloud and then translating that into high-performance infrastructure services.</p>
       <p>Team Iron is at its core a group of technologists, cloud architects, and system developers. The majority are long-time programmers &#8212; expert in building apps on the cloud and then translating that into high-performance infrastructure services.</p>
 
+    </div>
+
+    <div class="sidebar" style="width: 23%; padding-right: 2%; float: left;">
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent=".sidebar" href="#collapseOne">
+                  Codes
+                </a>
+              </div>
+              <div id="collapseOne" class="accordion-body collapse">
+                      <div class="accordion-inner">
+                              <ul>
+                                      <li><a href="#list">List</a></li>
+                                      <li><a href="#upload">Upload</a></li>
+                                      <li><a href="#delete">Delete</a></li>
+                                      <li><a href="#get-info">Get Info</a></li>
+                              </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent=".sidebar" href="#collapseTwo">
+                  Tasks
+                </a>
+              </div>
+              <div id="collapseTwo" class="accordion-body collapse">
+                <div class="accordion-inner">
+
+                              <ul>
+                                      <li><a href="#list">List</a></li>
+                                      <li><a href="#upload">Upload</a></li>
+                                      <li><a href="#delete">Delete</a></li>
+                                      <li><a href="#get-info">Get Info</a></li>
+                              </ul>
+
+                </div>
+              </div>
+            </div>
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a class="accordion-toggle" data-toggle="collapse" data-parent=".sidebar" href="#collapseThree">
+                  Schedules
+                </a>
+              </div>
+              <div id="collapseThree" class="accordion-body collapse">
+                <div class="accordion-inner">
+
+                              <ul>
+                                      <li><a href="#list">List</a></li>
+                                      <li><a href="#upload">Upload</a></li>
+                                      <li><a href="#delete">Delete</a></li>
+                                      <li><a href="#get-info">Get Info</a></li>
+                              </ul>
+
+                </div>
+              </div>
+            </div>
     </div>
 
    </div>
@@ -260,12 +360,15 @@
 function moveScroller() {
     var b = $(window).scrollTop();
     var d = $("#scroll-anchor").offset().top;
-    var c=$(".subnavigation");
+    var c=$(".subnav");
+    var e=$(".sidebar");
     if (b>d) {
-      c.css({position:"fixed",top:"0px"})
+            c.css({position:"fixed",top:"0px"});
+            e.css({position:"fixed",top:"100px"});
     } else {
       if (b<=d) {
-        c.css({position:"relative",top:""})
+              c.css({position:"relative",top:""});
+              e.css({position:"relative",top:""});
       }
     }
 }
