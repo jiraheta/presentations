@@ -4,12 +4,13 @@
         </head>
         <body>
                 <div id="placeholder" style="width:100%; height: 50%;"></div>
-                <div id="overview" style="margin-left:50px;margin-top:20px;width:400px;height:50px"></div>
                 <p id="choices">Show: </p>
+                <p><strong>Total users: <span id="total-users"></span></strong></p>
                 <script type="text/javascript" src="daily_stats.js"></script>
                 <script type="text/javascript" src="jquery.js"></script>
                 <script type="text/javascript" src="jquery.flot.js"></script>
                 <script type="text/javascript">
+                        $("#total-users").text(total_users);
                         var i = 0;
                         $.each(twocloud_stats, function(key, val) {
                                 val.color = i;
@@ -55,29 +56,6 @@
                                         };
                                         var plot = $.plot($("#placeholder"), data, options);
 
-                                        var overview = $.plot($("#overview"), data, {
-                                                series: {
-                                                        lines: { show: true, lineWidth: 1 },
-                                                        shadowSize: 0
-                                                },
-                                                legend: {show: false},
-                                                xaxis: { ticks: [], mode: "time" },
-                                                yaxis: { ticks: [], min: 0, autoscaleMargin: 0.1 },
-                                                selection: { mode: "x" }
-                                        });
-                                        $("#placeholder").bind("plotselected", function (event, ranges) {
-                                                plot = $.plot($("#placeholder"), data,
-                                                        $.extend(true, {}, options, {
-                                                                xaxis: { min: ranges.xaxis.from, max: ranges.xaxis.to }
-                                                        }));
-
-                                                overview.setSelection(ranges, true);
-                                        });
-    
-                                        $("#overview").bind("plotselected", function (event, ranges) {
-                                                        console.log("SELECTED");
-                                                plot.setSelection(ranges);
-                                        }); 
                                         var previousPoint = null;
                                         $("#placeholder").bind("plothover", function(event, pos, item) {
                                                 if (item) {
